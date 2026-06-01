@@ -1,0 +1,14 @@
+Nama Kolom,Tipe Data,Deskripsi / Cara Membaca Variabel
+Dapat Terurai,Binary (0/1),"Status keteruraian secara alami (1 = Ya, 0 = Tidak)"
+Daur Ulang,Binary (0/1),"Status potensi daur ulang material (1 = Ya, 0 = Tidak)"
+Nilai Jual,Binary (0/1),"Status kepemilikan nilai ekonomi mentah (1 = Ya, 0 = Tidak)"
+waktu_urai_bulan,Float,Estimasi durasi waktu urai material dalam hitungan bulan
+kategori_urai,String/Categorical,Klasifikasi kecepatan urai materi (Cepat / Sedang / Lama)
+kesulitan_encoded,Ordinal (1-5),Tingkat kesulitan proses daur ulang skala 1 (Mudah) sampai 5 (Sangat Sulit)
+Emisi CO2e (kg),Float,Volume emisi karbon dioksida ekuivalen yang dihasilkan dalam satuan kg
+nilai_jual_encoded,Ordinal (1-5),"Skala nilai jual sampah mentah ke pengepul/pabrik (1 = Rendah, 5 = Tinggi)"
+biaya_proses_encoded,Ordinal (1-5),"Skala biaya operasional proses industri (1 = Rendah, 5 = Sangat Tinggi)"
+beban_biaya_score,Integer (2-10),Total skor gabungan beban modal industri (nilai_jual_encoded + biaya_proses_encoded)
+env_impact_score,Float (0-1),"Skor komposit dampak kerusakan lingkungan (0 = Sangat Aman, 1 = Sangat Merusak)"
+econ_burden_score,Float (0-1),"Skor komposit beban kerugian ekonomi industri (0 = Menguntungkan, 1 = Sangat Berat)"
+recyclability_index,Float (0-1),"Indeks potensi kemudahan daur ulang komoditas (0 = Sangat Sulit, 1 = Sangat Mudah)"
